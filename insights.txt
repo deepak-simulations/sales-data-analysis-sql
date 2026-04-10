@@ -1,0 +1,36 @@
+ Insights 
+
+1. The buisness generated total revenue of approximately 5.02 million.
+
+
+2. The Clothing category generated the highest revenue of approximately 1.3 million.
+
+3. The Food category generated the lowest revenue of approximately 1.2 million.
+
+ This indicates clothing generates the hisghest revenue, while food is the lowest performing category.
+however, the difference between these categories are very small, indicating a balnced sale distribution across the catogries. 
+
+4. The highest revenue region is North, approx, 1.3 million, and lowers is from south region, approx 1.1 million. 
+
+The north region generates the highest revenue, while south contributes the least.
+The difference between the revenue of two region is significant, 
+indicating higher revenue contribution form the North region compared to other reason. 
+This may suggest stronger customer activity or better market presence in the North region. 
+However, further analyisis is required to determine the underlying causes. 
+
+5. The highest revenue is in the month of january ( 01 ) approx, 495.42k and the lowest revenue in
+seprember(09) approx, 367.37k. 
+
+The significant  difference between these months indicating fluactuating sales pattern,
+suggesting  seasonal variation with
+stronger performance in begginig of the year.
+
+6. The heighest profit is secured by the Furniture category,approx 1.7 million  and 
+the lowest revenue comes from Food category, approx 1.4 million. 
+
+While cloting leads in revenue, Furniture generates the highest profit, showing that high sales 
+do not always result in high profitibility.
+Food ranks lowest in both revenue and profit, indicating that lower sales often lead to lower 
+profit.   
+
+ 

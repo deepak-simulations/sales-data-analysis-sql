@@ -71,3 +71,37 @@ GROUP BY Product_Category
 ORDER BY  total_profit 
 LIMIT 1;
 
+## Category which has revenue above average.
+SELECT Product_Category, sum(CAST(Sales_Amount AS REAL)) AS total_sales
+FROM sales_data
+GROUP BY Product_Category
+HAVING total_sales > (
+  SELECT AVG(category_total)
+  FROM (
+    SELECT SUM(CAST(Sales_Amount AS REAL)) AS category_total
+    FROM sales_data
+    GROUP BY Product_Category
+  )
+);
+
+
+## Category which has revenue below average.
+SELECT Product_Category, sum(CAST(Sales_Amount AS REAL)) AS total_sales
+FROM sales_data
+GROUP BY Product_Category
+HAVING total_sales <  (
+  SELECT AVG(category_total)
+  FROM (
+    SELECT SUM(CAST(Sales_Amount AS REAL)) AS category_total
+    FROM sales_data
+    GROUP BY Product_Category
+  )
+);
+
+## Avarage revenue of  the categories
+SELECT ROUND(AVG(category_total),2)  AS average_category_revenue
+FROM  (
+      SELECT SUM(CAST(Sales_Amount AS REAL)) AS category_total
+      FROM sales_data
+      GROUP BY Product_Category
+       );

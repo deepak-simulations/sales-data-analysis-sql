@@ -34,3 +34,13 @@ Food ranks lowest in both revenue and profit, indicating that lower sales often 
 profit.   
 
  
+7.The average cateogry revenue is approximately 1.25 million. Clothing generates the highest
+revenue, approx 1.3 million. Furniture also peformes above average benchmark. Electronics and 
+Food fall below the average benchmark. 
+
+8. However, the variations across categories is moderate, with a difference of roughly 110k
+between the highest(clothing) and the lowest(Food). 
+
+9. This suggest that revenue distribution is fairly balanced across categories rather than highly
+skewed. 
+

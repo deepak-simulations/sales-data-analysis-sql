@@ -205,7 +205,7 @@ FROM (
 Where rank <= 2;
 
 
-# regions wehre the top category constributes more than 50% of total region sales 
+# regions wehre the top category contributes more than 50% of total region sales 
 
 
 SElECT 

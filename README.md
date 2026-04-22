@@ -1,20 +1,77 @@
-# Sales and Profit Analysis using SQL
+#  Sales Data Analysis using SQL & Python
 
-## Objective
-Analyze sales data to understand revenue trends, category performance, regional distribution, and profitability.
+##  Objective
+
+Analyze sales data to understand how product categories perform across different regions and identify patterns relative to regional averages.
+
+---
 
 ## Tools Used
-- SQL (SQLite)
-- Linux Terminal
+
+* SQL (SQLite, CTE, Window Functions)
+* Python (Pandas, Matplotlib)
+* Linux Terminal
+
+---
+
+## Key Analysis
+
+* Calculated total sales for each category across regions
+* Computed regional average sales
+* Measured performance gap (%) to compare category vs region performance
+
+---
 
 ## Key Insights
-- The business generated a total revenue of approximately 5.02M.
-- Clothing generates the highest revenue, while Food is the lowest performing category. The distribution is relatively balanced.
-- The North region generates the highest revenue, while the South contributes the least, indicating stronger market performance in the North.
-- Revenue peaks in January and is lowest in September, showing a fluctuating pattern and possible seasonality.
-- Although Clothing leads in revenue, Furniture generates the highest profit, indicating that high sales do not always result in high profitability.
 
-## Conclusion
-The analysis highlights that revenue and profitability are influenced by multiple factors such as category performance, 
-regional trends, and seasonal variations. High revenue does not always translate into high profit, 
-emphasizing the importance of cost structure and margins.
+* Clothing performs strongly in East and North
+* Electronics underperforms in most regions
+* Furniture performs exceptionally well in the North but underperforms across all other regions
+* Food performs well across most regions but drops significantly in the North
+
+ **Key Pattern:**
+Furniture and Food show completely opposite trends across regions, highlighting strong regional influence on category performance.
+
+---
+
+## Visualization
+
+* Bar chart comparing category performance vs regional average (%)
+* Green → Above average
+* Red → Below average
+
+---
+
+## Project Structure
+
+```
+data/        → Raw dataset  
+sql/         → SQL queries  
+python/      → Visualization script  
+outputs/     → Generated charts  
+insights/    → Observations  
+```
+
+---
+
+## Learning Outcomes
+
+* Writing structured SQL queries using CTE and window functions
+* Translating data into meaningful insights
+* Visualizing analysis using Python
+* Understanding region-based performance differences
+
+---
+
+##  Future Improvements
+
+* Build interactive dashboards (Power BI / Tableau)
+* Add time-based analysis
+* Improve visualization with grouped charts
+
+---
+
+## Feedback
+
+Open to suggestions and improvements!
+

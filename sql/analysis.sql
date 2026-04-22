@@ -241,3 +241,40 @@ FROM(
  ));
 
 
+#Find top two category per region
+
+
+
+
+SELECT
+    Product_Category,
+    Region,
+    total_sales,
+    total_region,
+    ROUND((total_sales/total_region)*100,2) AS contribution
+FROM(
+SELECT*
+FROM(
+SELECT
+    Product_Category,
+    Region,
+    total_sales,
+    SUM(totaL_sales) OVER(PARTITION BY Region) AS total_region,
+
+    ROW_NUMBER() OVER(
+          PARTITION BY Region
+           ORDER BY total_sales DESC
+          ) AS rank
+     
+FROM(
+SElECT 
+Product_Category,
+Region,
+SUM(Sales_Amount) AS total_sales
+
+FROM sales_data
+GROUP BY Product_Category,Region
+)t
+)final
+WHERE rank <= 2
+);

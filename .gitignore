@@ -1,0 +1,8 @@
+env/
+venv/
+__pycache__/
+*.pyc
+*.db
+.ipynb_checkpoints/
+homework.sql
+practice.db
